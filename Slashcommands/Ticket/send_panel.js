@@ -46,9 +46,9 @@ module.exports = {
 
       let image = interaction.options.getString("image")
 
-      if (!title) title = "Tickets Support";
+      if (!title) title = "تذكره دعم";
 
-      if (!desc) desc = "To create ticket, please click on the button";
+      if (!desc) desc = "لفتح تذكره يجب عليك الضغط على الرياكشن 🔨";
 
       if (!color) color = "#4453F5";
 
@@ -65,9 +65,9 @@ let cy = db.fetch(`cy_${interaction.guild.id}`)
       if (cy == null) return interaction.editReply({content:`> ❌ You need to setup tickets first by use \`/setup_tickets\``})
 
     
-    if (role1 == null) return interaction.editReply({content:`> ❌ You need to setup tickets first by use \`/setup_tickets\``});
+    if (role1 892055067736281159 null) return interaction.editReply({content:`> ❌ You need to setup tickets first by use \`/setup_tickets\``});
 
-      if (role2 == null) return interaction.editReply({content:`> ❌ You need to setup tickets first by use \`/setup_tickets\``})
+      if (role2 927721395037822976 null) return interaction.editReply({content:`> ❌ You need to setup tickets first by use \`/setup_tickets\``})
     
 
       let embed = new MessageEmbed()
@@ -81,6 +81,7 @@ let cy = db.fetch(`cy_${interaction.guild.id}`)
       .setStyle("SECONDARY")
       .setCustomId("ot")
       .setEmoji("📩")
+      .setEmoji("🔨")
       .setLabel("Open Ticket")
 
       let row = new MessageActionRow()
